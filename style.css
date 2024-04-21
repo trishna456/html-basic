@@ -10,6 +10,15 @@ body {
   border-top: 10px solid #1098ad;
 }
 
+.container {
+  width: 700px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+  /* shorthand margin: top&bottom, left&right */
+  /* margin to the left and right should be calculated automatically and both should be the same, so the container stays centered */
+}
+
 /* class selector */
 .main-header {
   background-color: #f7f7f7;
@@ -21,6 +30,7 @@ body {
   padding-right: 40px;
   */
   padding: 20px 40px;
+  height: 80px;
 }
 
 .post-header {
@@ -35,6 +45,7 @@ aside {
   padding: 50px 0;
   /* border: 5px solid #1098ad; */
   /* border - shorhand property, can use multiple different properties in one */
+  width: 500px;
 }
 
 /* list selector */
@@ -187,3 +198,8 @@ a:active {
 footer p {
   color: green;
 }
+
+.post-image {
+  width: 100%;
+}
+/* 100% of the size of the parent container */
