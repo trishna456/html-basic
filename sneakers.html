@@ -9,6 +9,7 @@
       * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
       body {
         font-family: sans-serif;
@@ -44,9 +45,35 @@
 
       .product {
         border: 5px solid black;
-        width: 600px;
+        width: 800px;
         margin: 40px auto;
         position: relative;
+      }
+
+      .main-image {
+        float: left;
+      }
+
+      .line1 {
+        float: left;
+        padding-right: 15px;
+      }
+
+      .line2 {
+        float: right;
+      }
+
+      .main-content {
+        width: 250px;
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+      }
+
+      .product-details {
+        float: left;
+        width: 200px;
       }
 
       .button {
@@ -130,31 +157,39 @@
         alt="Chuck Taylor All Star Shoe"
         height="250"
         width="250"
+        class="main-image"
       />
-      <p><strong>$65.00</strong></p>
-      <p id="free-shipping">Free shipping</p>
-      <p>
-        Ready to dress up or down, these classic canvas Chucks are an everyday
-        wardrobe staple.
-      </p>
 
-      <a href="https://www.converse.com">More information &rarr;</a>
+      <div class="main-content">
+        <div class="line1">
+          <p class="line1"><strong>$65.00</strong></p>
+          <p id="free-shipping" class="line2">Free shipping</p>
+        </div>
+        <p>
+          Ready to dress up or down, these classic canvas Chucks are an everyday
+          wardrobe staple.
+        </p>
 
-      <div class="colors">
-        <div class="color"></div>
-        <div class="color color-blue"></div>
-        <div class="color color-red"></div>
-        <div class="color color-yellow"></div>
-        <div class="color color-green"></div>
-        <div class="color color-brown"></div>
+        <a href="https://www.converse.com">More information &rarr;</a>
+
+        <div class="colors">
+          <div class="color"></div>
+          <div class="color color-blue"></div>
+          <div class="color color-red"></div>
+          <div class="color color-yellow"></div>
+          <div class="color color-green"></div>
+          <div class="color color-brown"></div>
+        </div>
       </div>
 
-      <h3>Product details</h3>
-      <ul class="details-list">
-        <li>Lightweight, durable canvas sneaker</li>
-        <li>Lightly padded footbed for added comfort</li>
-        <li>Iconic Chuck Taylor ankle patch</li>
-      </ul>
+      <div class="product-details">
+        <h3>Product details</h3>
+        <ul class="details-list">
+          <li>Lightweight, durable canvas sneaker</li>
+          <li>Lightly padded footbed for added comfort</li>
+          <li>Iconic Chuck Taylor ankle patch</li>
+        </ul>
+      </div>
 
       <button class="button">Add to cart</button>
     </article>

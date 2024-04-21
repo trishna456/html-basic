@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -45,10 +46,9 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
+  padding: 50px 40px;
   /* border: 5px solid #1098ad; */
   /* border - shorhand property, can use multiple different properties in one */
-  width: 500px;
 }
 
 /* list selector */
@@ -83,7 +83,7 @@ h3 {
 
 h4 {
   font-size: 20px;
-
+  margin-bottom: 30px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -139,6 +139,7 @@ footer p {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 /* body {
