@@ -188,6 +188,11 @@ article p:last-child {
 
 /* Styling links - link (all that have the href property), visited, hover, active */
 
+nav {
+  font-size: 18px;
+  text-align: center;
+}
+
 nav a:link {
   /* background-color: #bdeaf1;
   margin: 20px;
