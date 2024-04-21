@@ -4,9 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        line-height: 1.4;
+      }
+      h2 {
+        background-color: #e8e8e8;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .product {
+        border: 5px solid black;
+      }
+      button {
+        background-color: black;
+        color: white;
+        font-size: large;
+        font-family: sans-serif;
+        text-transform: uppercase;
+      }
+
+      button:hover {
+        background-color: white;
+        color: black;
+        font-size: large;
+        font-family: sans-serif;
+        text-transform: uppercase;
+      }
+
+      a:link {
+        color: black;
+      }
+
+      a:visited {
+        color: black;
+      }
+
+      #free-shipping {
+        text-transform: uppercase;
+        color: #abaaaa;
+      }
+      ul {
+        list-style-type: square;
+      }
+    </style>
   </head>
   <body>
-    <article>
+    <article class="product">
       <h2>Converse Chuck Taylor All Star Low Top</h2>
       <img
         src="https://i.ibb.co/Jr7Wh1d/challenges.jpg"
@@ -15,7 +61,7 @@
         width="250"
       />
       <p><strong>$65.00</strong></p>
-      <p>Free shipping</p>
+      <p id="free-shipping">Free shipping</p>
       <p>
         Ready to dress up or down, these classic canvas Chucks are an everyday
         wardrobe staple.
