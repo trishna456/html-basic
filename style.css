@@ -1,11 +1,40 @@
-/* universal selector - applies to ALL the elements
+/* universal selector - applies to ALL the elements */
 * {
-  border-top: 10px solid #1098ad;
-} */
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: sans-serif;
   color: #444;
+  border-top: 10px solid #1098ad;
+}
+
+/* class selector */
+.main-header {
+  background-color: #f7f7f7;
+  margin-bottom: 60px;
+  /* 
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  */
+  padding: 20px 40px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+/* element selector */
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  /* border: 5px solid #1098ad; */
+  /* border - shorhand property, can use multiple different properties in one */
 }
 
 /* list selector */
@@ -23,10 +52,12 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -39,6 +70,7 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
   /* 1.5 times the font size */
 }
 
@@ -70,20 +102,6 @@ footer p {
   list-style: none;
 }
 
-/* class selector */
-.main-header {
-  background-color: #f7f7f7;
-}
-
-/* element selector */
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-  /* border: 5px solid #1098ad; */
-  /* border - shorhand property, can use multiple different properties in one */
-}
-
 /* body {
   background-color: orangered;
 } */
@@ -92,8 +110,14 @@ aside {
   font-weight: bold;
 } */
 
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
 li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 /* psudo classes */
@@ -103,10 +127,15 @@ li:first-child {
 
 li:last-child {
   font-style: italic;
+  margin-bottom: 0;
 }
 
 li:nth-child(odd) {
   color: rgb(5, 73, 73);
+}
+
+article {
+  margin-bottom: 60px;
 }
 
 /* this won't work! it will only work if there is indeed p which is the first child of article, right now first child is header */
