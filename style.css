@@ -8,6 +8,7 @@ body {
   font-family: sans-serif;
   color: #444;
   border-top: 10px solid #1098ad;
+  position: relative;
 }
 
 .container {
@@ -30,7 +31,8 @@ body {
   padding-right: 40px;
   */
   padding: 20px 40px;
-  height: 80px;
+  /* height: 80px; */
+  /* if we set height with px then the element will not expand automatically if children expand */
 }
 
 .post-header {
@@ -160,6 +162,20 @@ article p:last-child {
 
 /* Styling links - link (all that have the href property), visited, hover, active */
 
+nav a:link {
+  /* background-color: #bdeaf1;
+  margin: 20px;
+  padding: 20px;
+  display: block; */
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
 a:link {
   color: #1098ad;
   text-decoration: none;
@@ -201,5 +217,19 @@ footer p {
 
 .post-image {
   width: 100%;
+  height: auto;
 }
 /* 100% of the size of the parent container */
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  /* top: 50px;
+  left: 50px; */
+  /* these are 50px relative to the viewport (the visible part of the page) */
+
+  bottom: 50px;
+  right: 50px;
+}
