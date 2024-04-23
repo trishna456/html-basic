@@ -126,12 +126,17 @@
         margin-top: 10px;
       }
 
+      .product-colors {
+        display: flex;
+        gap: 10px;
+      }
+
       .color {
         background-color: black;
         height: 22px;
         width: 22px;
-        display: inline-block;
-        margin-left: 10px;
+        /* display: inline-block; */
+        /* margin-left: 10px; */
       }
 
       .color-blue {
@@ -156,19 +161,20 @@
 
       .row {
         display: flex;
+        gap: 10px;
       }
 
       .product-details {
-        flex-basis: 550px;
+        flex: 1;
       }
 
       .main-content {
-        margin: 10px 10px;
+        flex: 1;
       }
 
       .row1 {
         display: flex;
-        gap: 100px;
+        justify-content: space-between;
       }
     </style>
   </head>
@@ -198,7 +204,7 @@
 
           <a href="https://www.converse.com">More information &rarr;</a>
 
-          <div class="colors">
+          <div class="product-colors">
             <div class="color"></div>
             <div class="color color-blue"></div>
             <div class="color color-red"></div>
